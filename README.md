@@ -1,4 +1,4 @@
-# tinypic-manjaro
+# tinypico-manjaro
 Setting up TinyPICO for Manjaro environment
 
 Hello! Here are some steps to set up the hardware kit for Manjaro.
