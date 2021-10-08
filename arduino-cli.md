@@ -14,8 +14,11 @@
    ```
    
 4. Add esp link
+   Open the file: **~/.arduino15/arduino-cli.yaml** with any text editor you like.
    ```
    <editor> ~/.arduino15/arduino-cli.yaml
+   
+   vim ~/.arduino15/arduino-cli.yaml
    ```
    
    In * addittional_urls* add the link: https://dl.espressif.com/dl/package_esp32_index.json
@@ -67,6 +70,34 @@
    
    arduino-cli upload --port /dev/ttyUSB0 -- fqbn esp32:esp32:tinypico .
    ```
+
+# Viewing output from Arduino in Terminal
+1. Install picocom
+   ```
+   sudo pacman -S picocom
+   ```
+3. Run serial monitor
+   ```
+   picocom -b <baud-rate> <port-device>
+   
+   picocom -b 115200 /dev/ttyUSB0
+   ```
+   
+   If unsure of your arduino port, run:
+   ```
+   arduino-cli board list
+   ```
+3. To exit:
+   ```
+   Ctrl-A + x
+   ```
+   Keep holding Ctrl after pressing x
+   
+## Other programs to view output
+* screen
+* minicom
+
+I have not found a way to create a serial plotter.
 
 # Commands
 * arduino-cli board list - Lists all board available and their port.
