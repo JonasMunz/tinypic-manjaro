@@ -43,6 +43,8 @@
 9. Create new sketc/arduino environment
    ```
    arduino-cli sketch new <name-of-your-sketch>
+   
+   arduino-cli sketch new test-sketch
    ```
 10. Compile
    While under your root folder of your sketch
@@ -51,13 +53,15 @@
    
    arduino-cli compile --fqbn esp32:esp32:tinypico .
    ```
+   
+   It may take a while.
 12. Add user to *uucp* group.
    ```
    sudo usermod -a -G uucp
    ```
    
    Log out and log in for the change to take effect
-13. Upload sketc to arduino
+13. Upload sketch to arduino
    ```
    arduino-cli upload --port <device-port> --fqbn esp32:esp32:tinypico <sketch-location>
    
