@@ -12,3 +12,6 @@ Hello! Here are some steps to set up the hardware kit for Manjaro.
 * Arduino-cli setup
 
 To setup Pulseview, look at the *arduino-ide.md* file under the *Pulseview* header.
+
+# Tested On
+* Manjaro XFCE 27.0.7
