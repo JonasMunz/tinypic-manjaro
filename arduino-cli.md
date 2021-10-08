@@ -14,7 +14,7 @@
    ```
    
 4. Add esp link
-5. 
+
    Open the file: **~/.arduino15/arduino-cli.yaml** with any text editor you like.
    ```
    <editor> ~/.arduino15/arduino-cli.yaml
