@@ -65,7 +65,7 @@
    
 12. Add user to *uucp* group.
    ```
-   sudo usermod -a -G uucp
+   sudo usermod -a -G uucp <account-name>
    ```
    
    Log out and log in for the change to take effect
