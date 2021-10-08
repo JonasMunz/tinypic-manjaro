@@ -34,8 +34,10 @@
    arduino-cli core update-index
    ```
 6. Install libraries
-   - arduino-cli lib install ArduinoWebsockets
-   - arduino-cli lib install "TinyPICO Helper Library"
+   ```
+   arduino-cli lib install ArduinoWebsockets
+   arduino-cli lib install "TinyPICO Helper Library"
+   ```
 7. Install ESP32
    ```
    arduino-cli core install esp32:esp32
