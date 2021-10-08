@@ -14,6 +14,7 @@
    ```
    
 4. Add esp link
+5. 
    Open the file: **~/.arduino15/arduino-cli.yaml** with any text editor you like.
    ```
    <editor> ~/.arduino15/arduino-cli.yaml
@@ -49,6 +50,7 @@
    
    arduino-cli sketch new test-sketch
    ```
+   
 10. Compile
    While under your root folder of your sketch
    ```
@@ -58,6 +60,7 @@
    ```
    
    It may take a while.
+   
 12. Add user to *uucp* group.
    ```
    sudo usermod -a -G uucp
@@ -72,6 +75,19 @@
    ```
 
 # Viewing output from Arduino in Terminal
+```
+stty -F <port-device> raw <baud-rate>
+cat <port-device>
+
+
+stty -F /dev/ttyUSB0 raw 115200
+
+cat /dev/ttyUSB0
+```
+
+Obtained from: https://arduino.stackexchange.com/questions/79058/access-serial-monitor-on-linux-cli-using-arduino-cli
+
+## Bidirectional Interaction (NOT NEEDED, but can be useful in the future)
 1. Install picocom
    ```
    sudo pacman -S picocom
