@@ -44,7 +44,7 @@
    ```
    pip install pyserial
    ```
-9. Create new sketc/arduino environment
+9. Create new sketch/arduino environment
    ```
    arduino-cli sketch new <name-of-your-sketch>
    
@@ -67,6 +67,7 @@
    ```
    
    Log out and log in for the change to take effect
+   
 13. Upload sketch to arduino
    ```
    arduino-cli upload --port <device-port> --fqbn esp32:esp32:tinypico <sketch-location>
