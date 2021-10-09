@@ -26,6 +26,8 @@ Add yourself to the group *uucp*
 sudo usermod -a -G uucp <account-username>
 ```
 
+Log out and log back in for it to take effect.
+
 # Setting up Pulseview
 
 ```
